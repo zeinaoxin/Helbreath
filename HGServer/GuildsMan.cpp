@@ -233,7 +233,8 @@ void CGame::PlayerOrder_DeleteRank(int iClientH, char* pData, DWORD dwMsgSize)
     token = pStrTok->pGet();
 
     if (token != 0) {
-        // token?€??梆 ?儰???€??挵〈??囅??父甸 荤侩?€???€?尭?        if (strlen(token) > 10)
+        // token?€??梆 ?儰???€??挵〈??囅??父甸 荤侩?€???€?尭?        
+		    if (strlen(token) > 10)
             memcpy(cTargetName, token, 10);
         else memcpy(cTargetName, token, strlen(token));
 

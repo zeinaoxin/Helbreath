@@ -2682,7 +2682,8 @@ void CGame::PlayerMagicHandler(int iClientH, int dX, int dY, short sType, bool b
 					if (m_pClientList[sOwnerH]->m_iAddPR >= 500) goto MAGIC_NOEFFECT;
 					// v1.4334 脙聛脙鸥脗赂脗鲁脙鈧偮?脙鈥∶兤捗偮访偮姑冣偓脙艗脗戮脙庐脗驴脗隆脗掳脙鈥?脙鈥犆兟惷偮访偮裁冣偓脗禄 脗赂脙赂脙鈥∶兟徝偮懊冣€?脗录脙露脙聛脗陇
 					if (memcmp(m_pClientList[iClientH]->m_cLocation, "NONE", 4) == 0) goto MAGIC_NOEFFECT;
-					// 2002-09-10 #2 脗戮脙藛脙鈧兟济兟伱兟睹偮疵兟?No-Attack-Area) 脙鈥犆兟惷偮访偮?脗赂脗露脗鹿脙陆 脗戮脙藛脗碌脙鈥∶偮懊冣€?脙鈥∶冣€?					if (cOwnerType == DEF_OWNERTYPE_PLAYER) {
+					// 2002-09-10 #2 脗戮脙藛脙鈧兟济兟伱兟睹偮疵兟?No-Attack-Area) 脙鈥犆兟惷偮访偮?脗赂脗露脗鹿脙陆 脗戮脙藛脗碌脙鈥∶偮懊冣€?脙鈥∶冣€?					
+					if (cOwnerType == DEF_OWNERTYPE_PLAYER) {
 
 						if (m_pMapList[m_pClientList[sOwnerH]->m_cMapIndex]->iGetAttribute(sX, sY, 0x00000006) != 0) goto MAGIC_NOEFFECT;
 						if (m_pMapList[m_pClientList[sOwnerH]->m_cMapIndex]->iGetAttribute(dX, dY, 0x00000006) != 0) goto MAGIC_NOEFFECT;

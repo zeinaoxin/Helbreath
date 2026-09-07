@@ -1015,7 +1015,8 @@ void CGame::DeleteNpc(int iNpcH)
 
 	RemoveFromTarget(iNpcH, DEF_OWNERTYPE_NPC);
 
-	// 铆聛卢毛拢篓矛鈥灺该澛疵€溑撁÷?锚卤麓矛露鈥⒚济澛疵澛济┞?矛搂鈧撍溍粹偓 铆鈥犅得陈疵÷?锚卤麓矛露鈥⒚?毛娄卢矛艩陇铆艩赂毛楼录 铆鈥⒙疵犈?	switch (m_pNpcList[iNpcH]->m_sType) {
+	// 铆聛卢毛拢篓矛鈥灺该澛疵€溑撁÷?锚卤麓矛露鈥⒚济澛疵澛济┞?矛搂鈧撍溍粹偓 铆鈥犅得陈疵÷?锚卤麓矛露鈥⒚?毛娄卢矛艩陇铆艩赂毛楼录 铆鈥⒙疵犈?	
+	switch (m_pNpcList[iNpcH]->m_sType) {
 	case 36:
 	case 37:
 	case 38:
